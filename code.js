@@ -1,8 +1,8 @@
 let x = 0;
 
-setInterval(main_process(), 500);
+setInterval(Main(), 500);
 
-function main_process() {
+function Main() {
   const dropdown = document.getElementsByTagName('ytd-playlist-video-renderer')[x].getElementsByTagName('button')[0];
   dropdown.click();
   setTimeout(click_onDelete(), 20);  
