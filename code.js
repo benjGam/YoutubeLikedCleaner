@@ -1,3 +1,15 @@
-document.getElementsByTagName('ytd-playlist-video-renderer')[0].getElementsByTagName('div')[20].getElementsByTagName('yt-icon-button')[0].click(); //Click on dropdown
+let x = 0;
 
-document.getElementsByTagName('tp-yt-paper-listbox')[1].getElementsByTagName('yt-formatted-string')[6].click() //click on
+setInterval(main_process(), 500);
+
+function main_process() {
+  const dropdown = document.getElementsByTagName('ytd-playlist-video-renderer')[x].getElementsByTagName('button')[0];
+  dropdown.click();
+  setTimeout(click_onDelete(), 20);  
+  x++;
+}
+
+function ClickDelete() {
+  const deleteLabel = document.getElementsByTagName('tp-yt-paper-listbox')[1].getElementsByTagName('yt-formatted-string')[6];
+  deleteLabel.click();
+}
