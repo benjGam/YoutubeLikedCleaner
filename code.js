@@ -4,7 +4,7 @@ setInterval(main(), 500);
 
 function main() {
   clickDropdown();
-  setTimeout(click_onDelete(), 20);  
+  setTimeout(clickDelete(), 20);  
   x++;
 }
 
@@ -13,7 +13,7 @@ function clickDropdown() {
   dropdown.click(); 
 }
 
-function ClickDelete() {
+function clickDelete() {
   const deleteLabel = document.getElementsByTagName('tp-yt-paper-listbox')[1].getElementsByTagName('yt-formatted-string')[6];
   deleteLabel.click();
 }
