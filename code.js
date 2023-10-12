@@ -1,12 +1,16 @@
 let x = 0;
 
-setInterval(Main(), 500);
+setInterval(main(), 500);
 
-function Main() {
-  const dropdown = document.getElementsByTagName('ytd-playlist-video-renderer')[x].getElementsByTagName('button')[0];
-  dropdown.click();
+function main() {
+  clickDropdown();
   setTimeout(click_onDelete(), 20);  
   x++;
+}
+
+function clickDropdown() {
+  const dropdown = document.getElementsByTagName('ytd-playlist-video-renderer')[x].getElementsByTagName('button')[0];
+  dropdown.click(); 
 }
 
 function ClickDelete() {
